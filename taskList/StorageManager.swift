@@ -15,7 +15,7 @@ class StorageManager {
     
     private var persistentContainer: NSPersistentContainer = {
 
-        let container = NSPersistentContainer(name: "CoreDataDemo")
+        let container = NSPersistentContainer(name: "taskList")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
             
